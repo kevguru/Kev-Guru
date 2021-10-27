@@ -1,0 +1,529 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,300;0,400;0,600;0,700;0,900;1,200&display=swap');
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	background-color: white;
+	color: red;
+	margin: 0;
+	text-align: center;
+	font-family: 'Urbanist', sans-serif;
+	position: relative;
+	width: 100%;
+	letter-spacing: .1rem;
+}
+
+#mobile-nav-menu{
+	z-index: 9999;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 15em;
+  display: none;
+  opacity: .965;
+}
+
+.mobile-nav-link{
+  font-size: 2rem;
+  line-height: 2.4em;
+  text-decoration:none;
+  color: white;
+  text-transform: uppercase;
+}
+
+#navbar{
+	background-color: black;
+	position: fixed;
+	width: 100%;	
+	height: 70px;
+	z-index: 9999;
+}
+
+#menu-icon-container{
+	display: inline;
+	float: right;
+	margin-right: 1rem;
+	margin-top: .9em;
+}
+
+.menu-icon{
+	background: red;
+	width: 2.2rem;
+	height: .33rem;
+	margin:  6px 0;
+}
+
+#container{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+#header-image-container{
+	max-height: 700px;
+	min-height: 694px;
+	height: 84.5vh;
+	width: 100%;
+	position: relative;
+	background-color: black;
+}
+
+#header-image-container::before{
+	content: "";
+	background-image: url("coverart.jpg");
+	background-size: 110px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: .15;
+}
+
+#new-single-container{
+	padding-top: .01em;
+	position: inherit;
+	background-color: black;
+	width: 75%;
+	height: 71.8%;
+	margin-top: 6.6em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1.3em;
+	border-radius: 7px;
+}
+
+#new-single-text-line{
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: .5em;
+}
+
+.new-single-text{
+	font-size: 1.5rem;
+	color: white;
+}
+#only-one-text{
+		line-height: 2.5;
+	font-size: 1.5rem;
+	background: linear-gradient(to right, #d41141, #ea5348);
+	color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: inline;
+}
+
+#kev-guru-text{
+	display: inline;
+	font-size: 1.4rem;
+	color: white;
+}
+
+#new-single-cover-art{
+	width: 150px;
+	height: 150px;
+	margin-top: 1.4em;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 2em;
+}
+
+#header-music-link{
+	color: red;
+	text-transform: uppercase;
+	border-bottom: red solid;
+	font-size: 1.2rem;
+	max-width: 8em;
+	width: 45%;
+	text-decoration: none;
+	font-weight: bold;
+	display: block;
+	margin-right: auto;
+  margin-left: auto;
+  margin-top: 2.5em;
+  padding-top: .4em;
+}
+
+#music-section{
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	min-height: 799px;
+	max-height: 695px;
+}
+
+#music-section::before{
+	content: "";
+	background-image: url("happy.jpg");
+	background-size: 80vh;
+	opacity: .12;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+#music-title{
+	font-size: 3rem;
+	margin: .8em 0 .8em 0;
+	text-transform: uppercase;
+	position: inherit;
+}
+
+#music-player{
+	height: 40%;
+	width: 75%;
+	margin-bottom: 3em;
+	position: inherit;
+	max-width: 30em;
+}
+
+#header-arrow-down{
+  border: solid red;
+  border-width: 0 .3em .3em 0;
+  display: inline-block;
+  padding: 1.2em;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+
+#header-arrow-container{
+	background-color: black;
+	/*margin-top: 39em;*/
+	padding-bottom: .3em;
+	width: 5em;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 50%;
+  position: inherit;
+}
+
+#music-arrow-down{
+  border: solid red;
+  border-width: 0 .3em .3em 0;
+  display: inline-block;
+  padding: 1.2em;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  
+  }
+
+#music-arrow-container{
+	background-color: black;
+	padding-bottom: .3em;
+	width: 5em;
+	border-radius: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 7.3em;
+}
+
+ #video-arrow-down{
+  border: solid red;
+  border-width: 0 .3em .3em 0;
+  display: inline-block;
+  padding: 1.2em;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+
+ }
+
+ #video-arrow-container{
+	background-color: black;
+	padding-bottom: .3em;
+	width: 5em;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5em;
+	border-radius: 50%;
+}
+
+
+#music-link{
+	color: red;
+	display: block;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	border-bottom: red solid;
+	max-width: 8em;
+	width: 45%;
+	text-decoration: none;
+	font-weight: bold;
+	margin-right: auto;
+	margin-left: auto;
+	position: inherit;
+	font-weight: 700;
+}
+
+#video-section{
+	width:  100%;
+	height: 100vh;
+	position: relative;
+	min-height: 799px;
+	max-height: 850px;
+}
+
+#video-section::before{
+	content: "";
+	background-image: url("lookatbeach.jpg");
+	background-size: 80vh;
+	opacity: .12;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+#video-title{
+	font-size: 3rem;
+	margin: 2em 0 .8em 0;
+	text-transform: uppercase;
+	position: inherit;
+}
+
+#video-player{
+	display: inline;
+	width: 75%;
+	margin-bottom: 2em;
+	position: inherit;
+	max-width: 35em;
+}
+
+#video-desc{
+	font-weight: bold;
+	position: inherit;
+}
+
+.youtube-btn{
+	display: block;
+	height: 50px;
+	width: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	position: inherit;
+}
+
+#contact-title{
+ 	font-size: 3rem;
+ 	margin: .5em 0 .5em 0;
+ 	text-transform: uppercase;
+ }
+
+#contact-section{
+	height: 87vh;
+	width: 100%;
+	max-height: 777px;
+}
+
+#contact-form{
+	list-style: none;
+	padding-right: 3em;
+}
+
+label{
+	color: black;
+	font-size: 1.3rem;
+	display: flex;
+	flex-direction: column;
+}
+
+#name-input{
+	margin: .6em;
+	width: 70%;
+	height: 20px;
+	border: black solid;
+	border-radius: 5px;
+	max-width: 40em;
+}
+
+#email-input{
+	margin: .6em;
+	width: 70%;
+	height: 20px;
+	border: black solid;
+	border-radius: 5px;
+	max-width: 40em;
+}
+
+#inquiry-input{
+	margin: .6em;
+	width: 70%;
+	height: 10px;
+	border: black solid;
+	border-radius: 5px;
+	max-width: 40em;
+	padding-bottom: 6em;
+}
+
+#submit-btn{
+	width: 50%;
+	height: 40px;
+	background-color: red;
+	border: black solid;
+	border-radius: 5px;
+	margin-top: .8em;
+	font-size: 1rem;
+	max-width: 34em;
+}
+
+#follow-title{
+	font-size: 3rem;
+ 	margin: 1em 0 1em 0;
+ 	text-transform: uppercase;
+}
+
+
+#follow-container{
+	display: flex;
+	justify-content: space-between;
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.follow-links-container{
+	height: 70px;
+	width: 85px;
+	text-align: center;
+}
+
+.follow-links{
+	height: 50px;
+	width: 50px;
+	margin-top: .5em;
+}
+
+footer{
+	display: block;
+	/*display: flex;
+	justify-content: space-between;*/
+	position: static;
+	bottom: 0;
+	width: 100%;
+}
+
+#copyright{
+	color: darkgray;
+	float: right;
+}
+
+#top-arrow-container{
+	padding-left: .5em;
+	float: left;
+}
+
+#top-arrow{
+	color: red;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+
+
+@media (max-height: 730px){
+	footer{
+		padding-top: 8.8em;
+	}
+}
+
+
+
+@media (max-width: 360px){
+	#new-single-cover-art{
+		margin-bottom: 0em;
+	}
+	#header-music-link{
+		margin-top: 0em;
+	}
+	footer{
+		letter-spacing: 0rem;
+	}
+}
+
+
+
+@media (max-width: 1024px){
+	#navbar-desktop{
+		display: none;
+	}
+	#navbar{
+		display: block;
+	}
+}
+
+
+
+@media (min-width: 1025px){
+	#navbar{
+		display: none;
+	}
+	#navbar-desktop{
+	z-index: 9999;
+	display: block;
+	background-color: black;
+	position: fixed;
+	width: 100%;	
+	height: 70px;
+}
+  .nav-links{
+  margin-top: 1.5em;
+  float: right;
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+  margin-right: .2em;
+  display: inline-block;
+  text-transform: uppercase;
+}
+.nav-links::after{
+	content:  "";
+	display: block;
+	width: 0;
+	height: 2px;
+	background: red;
+	transition: width .4s;
+	color: red;
+}
+.nav-links:hover::after{
+	color: red;
+  width: 100%;
+  transition: width .4s;
+}
+
+.nav-links:hover{
+	color: red;
+	transition-duration: .3s;
+}
+
+.follow-links-container:hover{
+	background-color: black;
+	transition: .4s;
+	border-radius: 6px
+}
+
+#header-music-link:hover{
+	color: white;
+	background-color: red;
+	border-radius: 4px;
+}
+
+#music-link:hover{
+	color: white;
+	background-color: red;
+	border-radius: 4px;
+}
+}

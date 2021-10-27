@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kev Guru</title>
+<link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+		<nav id="navbar-desktop">
+  			<div>
+    			<div><a class="nav-links" href="#contact-section">Contact</a></div>
+    			<div><a class="nav-links" href="#video-section">Videos</a></div>
+    			<div><a class="nav-links" href="#header-arrow-container">Music</a></div>
+    			<div><a class="nav-links" href="#header-image-container">Home</a></div>
+			</div>
+		</nav>
+
+		<nav id="navbar">
+			<div id="menu-icon-container">
+				<div class="menu-icon"></div>
+				<div class="menu-icon"></div>
+				<div class="menu-icon"></div>
+			</div>
+		</nav>
+
+		<div id="mobile-nav-menu">
+			<div>
+  				<a id="home-mobile-link" class="mobile-nav-link" href="#header-image-container">Home</a>
+			</div>
+			<div>
+  				<a id="music-mobile-link" class="mobile-nav-link" href="#header-arrow-container">Music</a>
+			</div>
+			<div>
+ 				 <a id="videos-mobile-link" class="mobile-nav-link" href="#video-section">Videos</a>
+			</div>
+			<div>
+  				<a id="contact-mobile-link" class="mobile-nav-link" href="#contact-section">Contact</a>
+			</div>
+		</div>
+
+
+	<div id="container">
+
+		<div id="header-image-container">
+			<div id="new-single-container">
+				<p id="new-single-text-line" class="new-single-text">NEW SINGLE</p>
+				<p id="only-one-text">"Only One"</p>
+				<p id="kev-guru-text"> by Kev Guru</p>
+				<img id="new-single-cover-art" src="coverart.jpg" alt="new single out now">
+				<p class="new-single-text">out now.</p>
+				<div id="header-music-link-container"><a id="header-music-link" href="https://linktr.ee/kevguru" target="_blank">Get it now</a></div>
+
+			</div>
+			<div id="header-arrow-container"><a href="#header-arrow-container"><p><i id="header-arrow-down"></i></p></a></div>
+		</div>
+
+		<div id="music-section">
+			<h2 id="music-title">Music</h2>
+			<iframe id="music-player" src="https://open.spotify.com/embed/track/0xXGQFYhaj2JjcfMqxH10S?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+			<a id="music-link" href="https://linktr.ee/kevguru" target="_blank">Get it now</a>
+			<div id="music-arrow-container"><a href="#video-section"><p><i id="music-arrow-down"></i></p></a></div>
+		</div>
+
+
+		<div id="video-section">
+			<h3 id="video-title">Videos</h3>
+			<iframe id="video-player" width="560" height="315" src="https://www.youtube.com/embed/2ecx8KATvkQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<p id="video-desc">For more videos follow below</p>
+			<a class="youtube-btn" href="https://www.youtube.com/channel/UCd8XcIxZ6iRUm6liDhmbtcA" target="_blank"><img class="youtube-btn" src="https://homes4hope.org/wp-content/uploads/2019/01/youtube-icon-flat-red-play-button-logo-vector.png" alt="youtube link"></a>
+			<div id="video-arrow-container"><a href="#contact-section"><p><i id="video-arrow-down"></i></p></a></div>
+		</div>
+
+
+		<div id="contact-section">
+			<h5 id="contact-title" >Contact</h5>
+			<ul><form id="contact-form">
+				<li><label for="name">Name:</label>
+				<input id="name-input" type="text" name="name" value=""></li>
+				<li><label for="email">Email:</label>
+				<input id="email-input" type="text" name="email" value=""></li>
+				<li><label for="inquiry">Inquiry:</label>
+				<input id="inquiry-input" type="text" name="inquiry" value=""></li>
+				<input id="submit-btn" type="submit" name="submit">
+			</form></ul>
+			<h5 id="follow-title">Follow</h5>
+			<div id="follow-container">
+				<div class="follow-links-container"><a href="https://open.spotify.com/artist/5X4fKbdfXUL9i5QtYggHsr" target="_blank"><img  class="follow-links" src="https://icones.pro/wp-content/uploads/2021/04/icone-spotify-rouge.png" alt=""></a></div>
+				<div class="follow-links-container"><a href="https://music.apple.com/us/artist/kev-guru/1557653192" target="_blank"><img  class="follow-links" src="https://icones.pro/wp-content/uploads/2021/04/icone-apple-symbole-logo-rouge.png" alt=""></a></div>
+				<div class="follow-links-container"><a href="https://www.instagram.com/kevguruu/" target="_blank"><img  class="follow-links" src="http://iconsetc.com/icons-watermarks/simple-red/bfa/bfa_brands-instagram/bfa_brands-instagram_simple-red_512x512.png" alt=""></a></div>
+				<div class="follow-links-container"><a href="https://www.youtube.com/channel/UCd8XcIxZ6iRUm6liDhmbtcA" target="_blank"><img  class="follow-links" src="https://homes4hope.org/wp-content/uploads/2019/01/youtube-icon-flat-red-play-button-logo-vector.png" alt=""></a></div>
+			</div>
+
+		</div>
+
+		<footer>
+		<div id="top-arrow-container"><a  id="top-arrow" href="#header-image-container"><p>Back to top ^<i class="arrow up"></i></p><a></div>
+		<div id="copyright-container"><p id="copyright">Copyright 2021. Kev Guru.</p></div>
+		</footer>
+
+	 </div>
+
+</body>
+<script src="script.js"></script>
+</html>
