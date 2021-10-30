@@ -1,9 +1,10 @@
 let menuIcon = document.querySelector("#menu-icon-container");
 let menu = document.querySelector("#mobile-nav-menu");
-let homeMenuLink= document.querySelector("#home-mobile-link")
-let musicMenuLink= document.querySelector("#music-mobile-link")
-let videosMenuLink= document.querySelector("#videos-mobile-link")
-let contactMenuLink= document.querySelector("#contact-mobile-link")
+let homeMenuLink = document.querySelector("#home-mobile-link")
+let musicMenuLink = document.querySelector("#music-mobile-link")
+let videosMenuLink = document.querySelector("#videos-mobile-link")
+let contactMenuLink = document.querySelector("#contact-mobile-link")
+let closeMenu = document.querySelector("#close-menu")
 
 
 
@@ -24,6 +25,10 @@ videosMenuLink.addEventListener("click", function(){
 })
 
 contactMenuLink.addEventListener("click", function(){
+	menu.style.display = "none"
+})
+
+closeMenu.addEventListener("click", function(){
 	menu.style.display = "none"
 })
 
