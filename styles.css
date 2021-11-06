@@ -18,7 +18,7 @@ body{
 
 #mobile-nav-menu{
 	z-index: 9999;
-  background-color: red;
+  background-color: black;
   height: 100%;
   width: 100%;
   position: fixed;
@@ -40,20 +40,35 @@ body{
 }
 
 #close-menu{
-	color: #333333;
+	color: white;
 	font-size: 2.5rem;
-	margin-top: -6.4em;
-	margin-right: .2em;
+	margin-top: -6.3em;
+	margin-right: .48em;
 	float: right;
-	font-weight: 100;
+	font-weight: 300;
 }
 
 #navbar{
+	display: flex;
+	flex-direction: row;
 	background-color: black;
 	position: fixed;
 	width: 100%;	
 	height: 70px;
 	z-index: 9999;
+}
+
+#logo-container{
+	margin-top: 1em;
+	margin-left: .3em;
+	float: left;
+	display: inline;
+}
+
+#logo{
+	height: 57px;
+	width: 57px;
+	cursor: pointer;
 }
 
 #menu-icon-container{
@@ -64,16 +79,18 @@ body{
 }
 
 .menu-icon{
-	background: red;
+	background: white;
 	width: 2.2rem;
 	height: .33rem;
 	margin:  6px 0;
+	border-radius: 2px;
 }
 
 #container{
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+	min-height: 570px;
 }
 
 #header-image-container{
@@ -190,7 +207,7 @@ body{
 	margin: .8em 0 .8em 0;
 	text-transform: uppercase;
 	position: inherit;
-	color: red;
+	color: black;
 	font-weight: bolder;
 }
 
@@ -305,7 +322,7 @@ body{
 	margin: 2em 0 .8em 0;
 	text-transform: uppercase;
 	position: inherit;
-	color: red;
+	color: black;
 	font-weight: bolder;
 }
 
@@ -320,6 +337,7 @@ body{
 #video-desc{
 	font-weight: bold;
 	position: inherit;
+	color: black;
 }
 
 .youtube-btn{
@@ -335,7 +353,7 @@ body{
  	font-size: 3rem;
  	margin: .5em 0 .5em 0;
  	text-transform: uppercase;
- 	color: red;
+ 	color: black;
  	font-weight: bolder;
  }
 
@@ -394,13 +412,14 @@ label{
 	margin-top: .8em;
 	font-size: 1rem;
 	max-width: 34em;
+	cursor: pointer;
 }
 
 #follow-title{
 	font-size: 3rem;
  	margin: 1em 0 1em 0;
  	text-transform: uppercase;
- 	color: red;
+ 	color: black;
  	font-weight: bolder;
 }
 
@@ -445,11 +464,16 @@ footer{
 }
 
 #top-arrow{
-	color: red;
+	color: black;
 	text-decoration: none;
 	font-weight: 600;
 }
 
+@media (max-height: 570px){
+	footer{
+		display: none;
+	}
+}
 
 
 @media (max-height: 730px){
